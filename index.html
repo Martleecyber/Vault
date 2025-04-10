@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
 
 </head>
 
@@ -228,8 +230,9 @@
   </section>
 
 
-<section class="px-4 sm:px-6 lg:px-20 py-16 opacity-0 translate-y-10 transition-all duration-1000 animate-on-scroll" id="features-section">
-  <!-- your content -->
+  <section class="px-4 sm:px-6 lg:px-20 py-16 opacity-0 translate-y-10 transition-all duration-1000 animate-on-scroll"
+    id="features-section">
+    <!-- your content -->
 
     <div class="justify-center flex gap-16 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 ">
       <div class="flex-1 flex justify-center lg:justify-start">
@@ -254,7 +257,7 @@
         <div
           class="bg-[#1a1a1a] rounded-xl p-6 transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:scale-[1.02]">
 
-<img src="./assets/Feature_Card_Clean_-_spending_tabs.svg" alt="">
+          <img src="./assets/Feature_Card_Clean_-_spending_tabs.svg" alt="">
 
           <span class="font-bold text-lg">
 
@@ -276,8 +279,9 @@
           add_card
         </i>       -->
           <div class="w-24 h-24">
-<i class=" text-5xl material-icons">
-  query_stats</i>          </div>
+            <i class=" text-5xl material-icons">
+              query_stats</i>
+          </div>
           <span class="font-bold text-lg">
             Set goals and track progress
             <p class="text-sm font-montserrat">
@@ -294,8 +298,109 @@
       </div>
   </section>
 
-  <section>
-    
+  <section class=" justify-center  flex">
+    <div class=" grid ">
+      <span class=" text-4xl ">Vault isn't like traditional banks — it's better.</span>
+      <span class="text-gray-300">
+        Save time, grow your wealth, and cut the stress with all your investment tools in one secure place.
+      </span>
+    </div>
+  </section>
+
+
+  <!-- Alpine.js CDN -->
+
+  <section class=" px-4 sm:px-6 lg:px-20 py-20" x-data="{ tab: 'investment' }">
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Tabs -->
+      <div class="flex space-x-4 mb-10">
+        <button @click="tab = 'investment'"
+          :class="tab === 'investment' ? 'bg-gradient-to-r from-blue-500 to-purple-500' : 'bg-white text-black'"
+          class="px-6 py-2 rounded-full font-semibold transition-all duration-200">
+          Investment
+        </button>
+        <button @click="tab = 'savings'"
+          :class="tab === 'savings' ? 'bg-gradient-to-r from-blue-500 to-purple-500' : 'bg-white text-black'"
+          class="px-6 py-2 rounded-full font-semibold transition-all duration-200">
+          Savings
+        </button>
+        <button @click="tab = 'banking'"
+          :class="tab === 'banking' ? 'bg-gradient-to-r from-blue-500 to-purple-500' : 'bg-white text-black'"
+          class="px-6 py-2 rounded-full font-semibold transition-all duration-200">
+          Banking
+        </button>
+      </div>
+
+      <!-- Feature Cards: Investment -->
+      <div x-show="tab === 'investment'" x-transition class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          class="bg-zinc-900  rounded-xl p-6 shadow-md   transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:scale-[1.02]">
+          <i class="material-icons text-white text-4xl "">monitoring</i>
+        <h3 class=" font-bold text-lg mb-2 text-gray-300">Track portfolio growth</h3>
+            <p class="text-sm">View real-time returns and trends across your investment assets.</p>
+        </div>
+        <div
+          class="bg-zinc-900  rounded-xl p-6 shadow-md transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:scale-[1.02]">
+          <i class="material-icons text-gray-300 text-4xl "">trending_up</i>
+        <h3 class=" font-bold text-lg mb-2 text-gray-300">Performance analytics</h3>
+            <p class="text-sm">Analyze how your investments are doing over time with visual insights.</p>
+        </div>
+        <div
+          class="bg-zinc-900  rounded-xl p-6 shadow-md transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:scale-[1.02]">
+          <i class="material-icons text-gray-300 text-4xl "">refresh</i>
+        <h3 class=" font-bold text-lg mb-2">Auto-invest</h3>
+            <p class="text-sm">Automate your contributions and let your portfolio grow hands-free.</p>
+        </div>
+      </div>
+
+      <!-- Feature Cards: Savings -->
+      <div x-show="tab === 'savings'" x-transition class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          class="bg-zinc-900 rounded-xl p-6 shadow-md  transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:scale-[1.02]">
+          <i class="bi bi-coin text-5x1"></i>
+          <h3 class="font-bold text-lg text-gray-300 mb-2">Create savings vaults</h3>
+          <p class="text-sm">Organize your money into goals like rent, travel, or emergencies.</p>
+        </div>
+        <div class="bg-zinc-900 rounded-xl p-6 shadow-md transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:scale-[1.02]">
+          <i class="bi bi-lock-fill text-5xl"></i>
+          <h3 class="font-bold text-lg mb-2 text-gray-300">Set savings goals</h3>
+          <p class="text-sm">Track progress and stay motivated with visual goal meters.</p>
+        </div>
+      <div
+        class="bg-zinc-900 rounded-xl p-6 shadow-md  transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:scale-[1.02]">
+        <i class="material-icons text-white text-4xl">alarm_on</i>
+        <h3 class="font-bold text-lg mb-2 text-gray-300">Scheduled deposits</h3>
+        <p class="text-sm">Schedule recurring transfers to build your savings over time.</p>
+      </div>
+    </div>
+
+    <!-- Feature Cards: Banking -->
+    <div x-show="tab === 'banking'" x-transition class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div
+        class="bg-zinc-900  rounded-xl p-6 shadow-md  transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:scale-[1.02]">
+        <i class="bi bi-cash-coin text-4xl "></i>
+        <h3 class="font-bold text-lg mb-2">Business checking</h3>
+        <p class="text-sm">Manage your funds securely with smart, fee-free business banking.</p>
+      </div>
+      <div
+        class="bg-zinc-900 rounded-xl p-6 shadow-md  transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:scale-[1.02]">
+
+        <i class="bi bi-send-check text-4xl"></i>
+
+        <h3 class="font-bold text-lg mb-2 text-gray-300">Fast transfers</h3>
+        <p class="text-sm">Send and receive money instantly with built-in payment tools.</p>
+      </div>
+      <div
+        class="bg-zinc-900  rounded-xl p-6 shadow-md  transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:scale-[1.02]">
+
+        <i class="bi bi-envelope-arrow-down-fill text-5xl"></i>
+        <h3 class="font-bold text-lg mb-2  text-gray-300">Mobile deposits</h3>
+        <p class="text-sm">Snap photos of checks and deposit funds without visiting a bank.</p>
+      </div>
+    </div>
+
+    </div>
   </section>
 
   <script>
@@ -313,12 +418,12 @@
         threshold: 0.2, // Trigger when 20% of the element is visible
       }
     );
-  
+
     document.querySelectorAll('.animate-on-scroll').forEach(el => {
       observer.observe(el);
     });
   </script>
-  
+
 </body>
 
 </html>
