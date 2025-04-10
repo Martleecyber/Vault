@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vault Banking</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Add this in your HTML <head> section -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <!-- Google Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+
+</head>
+
+<body class="bg-black text-white">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 py-4">
+    <!-- Logo and Brand -->
+    <div class="flex items-center space-x-2">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/bank.png" alt="Logo" class="w-6 h-6">
+      <span class="text-xl font-bold tracking-wide">Vault</span>
+    </div>
+
+    <!-- Menu links -->
+    <ul class="hidden md:flex space-x-6 text-sm font-medium">
+      <li><a href="#" class="hover:text-gray-300">Home</a></li>
+      <li><a href="#" class="hover:text-gray-300">Services</a></li>
+      <li><a href="#" class="hover:text-gray-300">Cards</a></li>
+      <li><a href="#" class="hover:text-gray-300">Transfers</a></li>
+      <li><a href="#" class="hover:text-gray-300">Support</a></li>
+    </ul>
+
+    <!-- Sign Up -->
+    <button
+      class="px-4 py-1 text-sm font-semibold text-white border border-white rounded-md hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 transition duration-300">
+      Sign Up
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="px-6 py-20 animate-fade-in " id="fadeSection">
+    <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+
+      <!-- Left Content -->
+      <div class="w-full md:w-1/2 text-center md:text-left space-y-6">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+          Invest, spend & save — all in one bank
+        </h1>
+        <p class="text-gray-400 text-base sm:text-lg">
+          Empower your business growth with smart financial tools designed for modern entrepreneurs.
+        </p>
+        <div class="flex justify-center md:justify-start">
+          <button
+            class="bg-gradient-to-r from-blue-500 to-purple-500 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-md transition duration-300">
+            Get Started
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="w-full md:w-1/2 flex justify-center">
+        <img src="./assets/a1bb64c0b56358b08ca4280592d01c25-removebg-preview.png" alt="App Preview"
+          class="w-64 sm:w-80 md:w-96 rounded-xl shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-black text-white px-6 py-20">
+    <div class="max-w-7xl mx-auto text-center space-y-10">
+
+      <!-- Section Heading -->
+      <div class="space-y-4">
+        <h2 class="text-3xl sm:text-4xl font-bold">What Makes Us the Best</h2>
+        <p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
+          We redefine banking by combining powerful tools with world-class support, trust, and technology.
+        </p>
+      </div>
+
+      <!-- Feature Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+
+        <!-- 1. Customer Support -->
+        <div class="bg-zinc-900 rounded-xl p-6 text-left shadow-md hover:shadow-xl transition">
+          <div class="mb-4">
+            <img src="https://img.icons8.com/ios-filled/50/00c3ff/customer-support.png" class="w-8 h-8"
+              alt="Customer Support" />
+          </div>
+          <h3 class="text-xl font-semibold mb-2">24/7 Customer Support</h3>
+          <p class="text-gray-400 text-sm">
+            Our team is here round the clock to assist you with anything, anytime.
+          </p>
+        </div>
+
+        <!-- 2. Credit Card -->
+        <div class="bg-zinc-900 rounded-xl p-6 text-left shadow-md hover:shadow-xl transition">
+          <div class="mb-4">
+            <img src="https://img.icons8.com/ios-filled/50/00c3ff/bank-cards.png" class="w-8 h-8" alt="Credit Card" />
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Smart Credit Cards</h3>
+          <p class="text-gray-400 text-sm">
+            Control, monitor, and spend with ease using our intelligent card services.
+          </p>
+        </div>
+
+        <!-- 3. Reliable -->
+        <div class="bg-zinc-900 rounded-xl p-6 text-left shadow-md hover:shadow-xl transition">
+          <div class="mb-4">
+            <img src="https://img.icons8.com/ios-filled/50/00c3ff/checked--v1.png" class="w-8 h-8" alt="Reliable" />
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Trusted & Reliable</h3>
+          <p class="text-gray-400 text-sm">
+            Built with security, speed, and transparency at its core — your money is safe here.
+          </p>
+        </div>
+
+        <!-- 4. Global Clients -->
+        <div class="bg-zinc-900 rounded-xl p-6 text-left shadow-md hover:shadow-xl transition">
+          <div class="mb-4">
+            <img src="https://img.icons8.com/ios-filled/50/00c3ff/group-foreground-selected.png" class="w-8 h-8"
+              alt="Clients" />
+          </div>
+          <h3 class="text-xl font-semibold mb-2">500K+ Global Clients</h3>
+          <p class="text-gray-400 text-sm">
+            Thousands of individuals and businesses worldwide trust us to grow their finances.
+          </p>
+        </div>
+
+        <!-- 5. Online Banking -->
+        <div class="bg-zinc-900 rounded-xl p-6 text-left shadow-md hover:shadow-xl transition">
+          <div class="mb-4">
+            <img src="https://img.icons8.com/ios-filled/50/00c3ff/internet.png" class="w-8 h-8" alt="Online Banking" />
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Seamless Online Banking</h3>
+          <p class="text-gray-400 text-sm">
+            Bank anywhere, anytime — manage your funds on the go with our secure digital platform.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-black text-white px-6 py-24">
+    <div class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16">
+
+      <!-- Text Section -->
+      <div class="w-full lg:w-1/2 space-y-8">
+        <h2 class="text-4xl font-bold leading-tight">
+          Move Your Money with Ease
+        </h2>
+        <p class="text-gray-400 text-base leading-relaxed max-w-lg">
+          Experience fast, secure, and flexible ways to deposit funds, make payments, and manage your financial
+          operations—all in one place.
+        </p>
+
+        <div class="space-y-6">
+          <!-- Feature 1 -->
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-1">Easy Deposits</h3>
+            <p class="text-gray-400 text-sm">
+              Deposit checks and cash, send and accept invoices, accept ACH transfers, wires, or set up direct deposit
+              to get paid up to 2 days early.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-1">Simplified Payments</h3>
+            <p class="text-gray-400 text-sm">
+              Integrate seamlessly with Cash App, Venmo, PayPal, and more. Instant Found-to-Found payments—no fees, no
+              delays.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-1">Up to 20 Virtual Cards</h3>
+            <p class="text-gray-400 text-sm">
+              Create and manage virtual cards to separate budgets, control spending, and protect your business
+              transactions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image / Phone Mockup -->
+      <div class="w-full lg:w-1/2 flex justify-center">
+        <img src="./assets/Screen_-_Feature_-_Pay_-_Send_to_contacts_-_EN.jpg" alt="Banking app phone UI"
+          class="w-[300px] sm:w-[340px] lg:w-[400px] rounded-xl border border-zinc-800 shadow-xl" />
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <section class="bg-black text-white px-6 py-20">
+    <div class="max-w-4xl mx-auto text-center space-y-6">
+      <h1 class="text-gray-400 text-sm uppercase tracking-widest font-montserrat">
+        Organize your money your way
+      </h1>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold font-montserrat leading-tight">
+        Budget and Save with Pockets
+      </h2>
+    </div>
+  </section>
+
+
+ <section class="px-4 sm:px-6 lg:px-20 py-16">
+  <div class="justify-center flex gap-16 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 ">
+    <div class="flex-1 flex justify-center lg:justify-start">
+      <img src="./assets/Budget_and_save_with_pockets.svg" alt="">
+
+
+    </div>
+
+    <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-8 ">
+      <div>
+        <i class="material-icons text-3xl">account_balance</i>
+       <span class="font-bold text-lg">
+        Easy deposits
+        <p class="text-sm font-montserrat">
+        Deposit checks and cash; send and accept invoices. <br> Accept ACH transfers, wires, or set up direct deposit to get paid 2 days early. </p>      </span>
+
+      </div>
+      <div>
+        
+        <i class="material-icons text-3xl">payments</i>
+                 
+          
+          <span class="font-bold text-lg">
+
+        Easy payments
+             <p class="text-sm font-montserrat">
+   
+   
+              Integrate seamlessly with payment apps like Venmo, Cash App, PayPal, Square, and more. Found-to-Found payments are instant and free    </p>      </span>
+
+     
+      
+        
+    </div>
+      <div>
+        <i class="material-icons">
+          add_card
+        </i>       <span class="font-bold text-lg">
+        Easy deposits
+        <p class="text-sm font-montserrat">
+        Deposit checks and cash; send and accept invoices. <br> Accept ACH transfers, wires, or set up direct deposit to get paid 2 days early. </p>      </span>
+
+     
+      
+        
+    </div>
+
+
+  </div>
+</section>
+  <script src="index.js">
+    document.addEventListener('DOMContentLoaded', () => {
+      const section = document.getElementById('fadeSection');
+      // Small timeout to ensure the initial state is rendered
+      setTimeout(() => {
+        section.classList.remove('opacity-0');
+      }, 100);
+    });
+  </script>
+</body>
+
+</html>
+
+</html>
